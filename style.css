@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+
+}
+
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Devil breeze;
+    margin-left: 10px;
+}
+
+nav {
+    font-family: Devil breeze;
+    margin-right: 10px;
+}
+
+nav a {
+    margin-left: 25px;
+}
+
+a img {
+    height: 18px;
+}
+
+
+
+.cont {
+    margin-right: 10px;
+    margin-left: 10px;
+    position:relative;
+    
+}
+
+.img1 {
+    width:100%;
+}
+
+.ban {
+    position:relative;
+}
+
+div .contUs {
+    position: absolute;
+    top:calc(50% - 24px);
+    width: 100%;
+    font-family: Montserrat;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+iframe {
+    margin: 0;
+    padding: 0;
+    filter: grayscale(100%);
+}
+
+
+
+.Tcontact {
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 117px;
+    margin-bottom: 40px;
+
+}
+
+.formCont p {
+    font-family: Adelle;
+    text-align: center;
+    color:#989898;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    display: block;
+    margin-top: 15px;
+    width: 171px;
+    height: 48px;
+    border:0;
+    border-radius: 0;
+    background-color: black;
+    font-family: Montserrat;
+    font-size: 18px;
+    color: white;
+}
+
+.inf {
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.field {
+    margin-bottom: 15px;
+    width:375px;
+    height:48px;
+    font-family: Montserrat;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+
+textarea {
+    width:100%;
+    height: 272px;
+    font-family: Montserrat;
+    font-size: 20px;
+    resize: none;
+}
+
+ul {
+    list-style: none;
+    margin-top:30px;
+}
+
+footer {
+    margin:10px 10px 10px 10px;
+}
+
+li {
+    margin: 30px 0 10px 0;
+    display: flex;
+}
+
+h4 {
+    font-family: Montserrat;
+}
+
+li img  {
+    margin-right: 15px;
+}
+
+li span {
+ font-family: Montserrat;
+ font-size: 18px;
+}
+
+.top_footer {
+    width:100%;
+    height:179px;
+    background-color: black;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.discuss {
+    color: #fff;
+    font-family: Droid serif;
+}
+
+.top_footer a {
+    width:163px;
+    height:48px;
+    display: block;
+    color: #fff;
+    border:2px solid #fff;
+    line-height: 48px;
+    text-align: center;
+    font-family: Montserrat;
+    margin-left: 100px;
+}
+
+.address {
+    width: 50%;
+    height:192px;
+    background-color: #F6F6F6;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.address p {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+.reseau {
+    width: 50%;
+    height:192px;
+    background-color: #343434;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reseau p {
+    color: #fff;
+    margin-top:15px ;
+    font-family: Roboto;
+}
+
+@media screen and (max-width: 850px) {
+    .icon {
+        position: relative;
+        display: block;
+        float: left;
+        width:20px;
+        height: 22px;  
+        margin-top:10px;
+        margin-left:10px;
+    }
+
+    .icon::after {
+        content:"";
+        position:absolute;
+        display:block;
+        width:20px;
+        height:0px;
+        box-shadow: 0 3px 0 1px #000000, 0 11px 0 1px #000000,0 19px 0 1px #000000 ;}
+        
+nav {
+    width: 250px;
+    position:absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    z-index: 10;
+    background-color: #fff;
+    transform: translateX(-500px);
+    transition: all 0.3s ease-in-out;
+}
+
+header {
+    flex-direction: column;
+}
+
+nav a {
+    margin-top:25px;
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    border-bottom:1px solid black;
+}
+
+
+#pusher {
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+}
+.with_menu nav {
+    transform: translateX(-250px);
+}
+.with_menu #pusher {
+    transform: translateX(250px);
+}
+}
